@@ -1,0 +1,58 @@
+<html>
+	<head>
+	  <link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	  <title>Graficar funciones</title>
+	  </head>
+	<body>
+	  <header>
+      GRAFICAR FUNCIONES
+	  </header>
+		<div id="marco">
+			<canvas id="micanvas" width="720" height="480">
+			</canvas>
+				<div class="derecha">
+					<a class="a">Ingrese el grado de la funcion: </a>
+					<select id="grado" onchange="grado()">
+						<option value="0" selected="selected">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<div id="grado3">
+						<input id="x3" type="text" value=""><a> x3</a>
+						<select id="signo3">
+							<option value="+" selected="selected">+</option>
+							<option value="-">-</option>
+							<option value="*">*</option>
+							<option value="/">/</option>
+						</select>
+					</div>
+					<div id="grado2">
+						<input id="x2" type="text" value=""><a> x2</a>
+						<select id="signo2">
+							<option value="+" selected="selected">+</option>
+							<option value="-">-</option>
+							<option value="*">*</option>
+							<option value="/">/</option>
+						</select>
+					</div>
+					<div id="grado1">
+						<input id="x1" type="text" value=""><a> x1</a>
+						<select id="signo1">
+							<option value="+" selected="selected">+</option>
+							<option value="-">-</option>
+							<option value="*">*</option>
+							<option value="/">/</option>
+						</select>
+					</div>
+                    <div id="grado0">
+					   <input id="x0" type="text" value=""><a> x0</a>
+                    </div>
+					<button onclick="graficar();" class="button">Graficar</button>
+					<input type="text" id="resultado">
+				</div>
+		</div>
+
+	</body>
+</html>
