@@ -62,7 +62,7 @@ function sel1(s1,x,x1,x0){
           else if (s1 == "*") return (x1*x) * x0;
           else if (s1 == "/") return (x1*x) / x0;
   } else {
-    document.getElementById("resultado").value = "0";
+
     graficar(0,0, 100);
     }
 }
@@ -93,7 +93,7 @@ function sel2(s2,s1,x,x2,x1,x0){
       }
 
       } else {
-        document.getElementById("resultado").value = "0";
+
         graficar(0,0, 100);
         }
 }
@@ -122,45 +122,40 @@ function calcular() {
     if(x0 && x1 && x2 && x3) {
       if (s3 == "+") {
         var y = x3*(x**3) + sel2(s2,s1,x,x2,x1,x0);
-        document.getElementById("resultado").value = y;
+
         graficar(y*1,x*-1,100);
       } else if (s3 == "-") {
         var y = x3*(x**3) - sel2(s2,s1,x,x2,x1,x0);
-        document.getElementById("resultado").value = y;
+
         graficar(y*1,x*-1,100);
       } else if (s3 == "*") {
         var y = x3*(x**3) * sel2(s2,s1,x,x2,x1,x0);
-        document.getElementById("resultado").value = y;
+
         graficar(y*1,x*-1,100);
       } else if (s3 == "/") {
         var y = x3*(x**3) / sel2(s2,s1,x,x2,x1,x0);
-        document.getElementById("resultado").value = y;
+
         graficar(y*1,x*-1,100);
       }
-      else document.getElementById("resultado").value = "0";
       graficar(0,0,100);
       }
 
 	  } else if (sel == 2) {
 
 		    var y = sel2(s2,s1,x,x2,x1,x0);
-        document.getElementById("resultado").value = y;
         graficar(y*1,x*-1,100);
 
     } else if (sel == 1) {
 
 		    var y = sel1(s1,x,x1,x0);
-        document.getElementById("resultado").value = y;
         graficar(y*1,x*-1,100);
 
     } else if (sel == 0) {
 
 		  if(x0) {
-		    document.getElementById("resultado").value = x0;
         graficar(x,x0, 100);
 		    }
       else {
-      document.getElementById("resultado").value = "0";
       graficar(0,0, 100);
       }
 	}
