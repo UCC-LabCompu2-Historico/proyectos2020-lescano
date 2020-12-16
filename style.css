@@ -1,0 +1,63 @@
+canvas {
+	border: 5px solid #d3d3d3;
+}
+
+#can {
+	margin-left: 35%;
+}
+
+#fun {
+	align-content: center;
+	margin-left: 40%;
+	margin-top: -25%;
+}
+
+input {
+	width: 3%;
+	height: 3%;
+}
+
+select {
+	background-color: deepskyblue;
+	border-radius: 12px;
+	color: white;
+	border: none;
+	padding: 0.5%;
+}
+
+#res {
+	width: 15%;
+	margin-left: 40%;
+	margin-top: 25%;
+}
+
+.btnG {
+	margin-top: 2%;
+	margin-left: 12%;
+}
+
+.btn, #res {
+	background-color: deepskyblue;
+	border-radius: 12px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border: none;
+}
+
+.btn:hover, #res:hover {
+	background-color: dodgerblue;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.img {
+	visibility: hidden;
+}
+
+button {
+	text-decoration: none;
+	text-decoration-color: white;
+	padding: 10px;
+	font-size: 100%;
+}

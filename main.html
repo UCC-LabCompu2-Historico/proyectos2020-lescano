@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
+		<title>Graficar funciones 2.0</title>
+	</head>
+
+	<body onload="esconder()">
+		<header class="btn">
+			<a class="btn" href="">
+				<h1>GRAFICAR FUNCIONES</h1>
+			</a>
+		</header>
+		
+		<div id="can">
+			<canvas id="tutorial" width="500" height="500"></canvas>
+		</div>
+		
+		<div id="fun">
+			
+			<div id="funcion">
+				<input id="x3" type="text" value="0"><a> x3</a>
+				<select id="signo3">
+					<option value="+" selected="selected">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+				</select>
+
+				<input id="x2" type="text" value="0"><a> x2</a>
+				<select id="signo2">
+					<option value="+" selected="selected">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+				</select>
+
+				<input id="x1" type="text" value="0"><a> x1</a>
+				<select id="signo1">
+					<option value="+" selected="selected">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+				</select>
+			
+				<input id="x0" type="text" value="0"><a> x0</a>
+			</div>
+
+			<button onclick="calcular();" class="button btn btnG">Graficar</button>
+			
+		</div>
+		
+		<div id="res">
+			<a class="btn" href="">
+				<h1>Calcular de nuevo</h1>
+			</a>
+		</div>
+		<img id="fondo" class="img" width="500" height="500" src="imagenes/fondo.png" alt="Fondo">
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
